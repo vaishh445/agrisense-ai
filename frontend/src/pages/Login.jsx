@@ -1,7 +1,14 @@
 import { Leaf } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import AuthInput from "../components/AuthInput";
 
 function Login() {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/dashboard");
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 flex items-center justify-center">
 
@@ -38,6 +45,7 @@ function Login() {
         </div>
 
         <button
+          onClick={handleLogin}
           className="w-full bg-green-700 text-white py-3 rounded-xl mt-6 hover:bg-green-800 transition duration-300"
         >
           Login

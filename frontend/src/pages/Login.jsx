@@ -15,7 +15,10 @@ function Login() {
       <div className="bg-white w-[420px] rounded-3xl shadow-2xl p-10">
 
         <div className="flex justify-center">
-          <Leaf size={55} className="text-green-700" />
+          <Leaf
+            size={55}
+            className="text-green-700"
+          />
         </div>
 
         <h1 className="text-4xl font-bold text-center text-green-700 mt-3">

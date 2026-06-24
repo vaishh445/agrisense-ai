@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Login from "./pages/Login";
-import Dashboard from "./pages/dashboard";
+import Dashboard from "./pages/Dashboard";
 import Upload from "./pages/Upload";
 import Result from "./pages/Result";
 import History from "./pages/History";
@@ -18,7 +18,7 @@ function App() {
 
         <Route path="/" element={<Login />} />
 
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/Dashboard" element={<Dashboard />} />
 
         <Route path="/upload" element={<Upload />} />
 
